@@ -1,33 +1,115 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Block{
+  background-color:  rgb(21, 49, 33);
+  width: 100%;
+  height: 750px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: 2px solid black;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.Block img {
+  height: 66%;
+  overflow: hidden;
+  margin-left: 30%;
+  margin-top: 90px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.Carousel{
+  width: 100%;
+}
+#popular{
+  padding-top: 50px;
+  margin-left: 37%;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+.second_level{
+  background: rgb(245, 246, 255);
+  height: 1350px;
+  float: left;
+  width: 100%;
+}
+.UPPER{
+  margin: 0;
+  padding: 0;
+}
+.input_block{
+  position: absolute;
+  background-color: white; 
+  height: 650px;
+  width: 600px;
+  padding: 30px;
+  padding-top: 70px;
+  margin-top: 50px;
+  margin-left: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+#enter_your{
+  font-size: 40px;
+  padding-left: 30%;
+  padding-top: 60px;
+  font-size: 55px;
+} 
+.third_level{
+  float: left;
+  width: 100%;
+  margin-top: 70px;
+  
+}
+.outer{
+    background: rgb(54, 223, 68);
+    position: relative; 
+    height: 750px;
+    width: 700px;
+    margin: 90px 0 50px 29%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+#logo{
+  float: left;
+  width: 660px;
+  height:446px;
+  margin: 100px 0 0 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Text1{
+  padding: 30px;
+  text-align: left;
+  font-size: 20px;
+  float: left;
+  width: 900px;
+  height: 406px;;
+  margin: 100px 0 0 100px;
+  padding-top: 0;
+}
+.btn1{
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px 15px 0px 15px;
+  margin-top: 30px;
+  float: left;
+}
+.btn1:hover{
+  background: rgba(190, 216, 200, 0.19);
+  cursor: pointer;
+}
+.twoBlock{
+  margin-top: 650px;
+}
+.FOOTER{
+  float: left;
+  background-color: rgb(135, 168, 142);
+  height: 600px;
+  width: 100%;
+  margin-top: 200px;
 }

@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.CARD{
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 20px;
+    margin: 80px 90px 0 0;
+    float: left;
+    background-color: rgb(56, 100, 62);
+    height: 500px;
+    width: 400px;
+}
+.CARD p{
+    padding: 20px 10px 10px 0;
+}
