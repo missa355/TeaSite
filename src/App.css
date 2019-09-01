@@ -83,6 +83,9 @@ body{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);;
 
 }
+#logo1{
+  margin: 100px 0 0 160px;
+}
 .Text1{
   padding: 30px;
   text-align: left;
@@ -90,7 +93,7 @@ body{
   float: left;
   width: 900px;
   height: 406px;;
-  margin: 100px 0 0 100px;
+  margin: 100px 0 0 130px;
   padding-top: 0;
 }
 .btn1{
