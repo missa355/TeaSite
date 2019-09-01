@@ -26,12 +26,6 @@ body{
 .Carousel{
   width: 100%;
 }
-#popular{
-  padding-top: 50px;
-  margin-left: 37%;
-  font-size: 60px;
-  margin-bottom: 40px;
-}
 .second_level{
   background: rgb(245, 246, 255);
   height: 1350px;
@@ -74,14 +68,17 @@ body{
     margin: 90px 0 50px 29%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);;
 }
-#logo{
+#logo1, #logo2{
   float: left;
   width: 660px;
   height:446px;
-  margin: 100px 0 0 100px;
+  margin: 100px 0 0 280px;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);;
 
+}
+#logo2{
+  margin: 100px 0 0 250px;
 }
 .Text1{
   padding: 30px;
@@ -90,7 +87,7 @@ body{
   float: left;
   width: 900px;
   height: 406px;;
-  margin: 100px 0 0 100px;
+  margin: 100px 0 0 250px;
   padding-top: 0;
 }
 .btn1{

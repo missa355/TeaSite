@@ -24,7 +24,7 @@ function App() {
 
                 <div className="second_level">
                   <div className="2Ablock">
-                    <img src={logo} alt="IMG" id="logo"/>
+                    <img src={logo} alt="IMG" id="logo1"/>
                     <div className="Text1">
                       <h2>FEEL THE CIRTUS TASTE.</h2> <br />
                       <p>Try a lemon taste to relax your mind with the citrus feeling .One of our most demanded products
@@ -48,7 +48,7 @@ function App() {
                         <p>Get a taste</p>
                       </div>
                     </div>
-                    <img src={mint} alt="IMG" id="logo"/>
+                    <img src={mint} alt="IMG" id="logo2"/>
                   </div>
 
                 </div>
