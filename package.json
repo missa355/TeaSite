@@ -17,7 +17,8 @@
     "react-scripts": "3.0.1",
     "react-scroll": "^1.7.12",
     "react-select": "^3.0.4",
-    "react-transition-group": "^4.1.0"
+    "react-transition-group": "^4.1.0",
+    "set-default-browser": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
