@@ -39,7 +39,7 @@ function App() {
 
                   <div className="twoBlock">
 
-                    <div className="Text1">
+                    <div className="Text2">
                       <h2>INDULGE IN THE PUNGENT MENTHOL AROMA AND FLAVOUR.</h2> <br />
                       <p>Out mintty recipes are what we represent. From tea to milkshake, we take
                        our mint falvour very seriouse and you can vouche for it after trying it.
