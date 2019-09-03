@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  zoom: 100%;
+  zoom: 75%;
 }
 *{
   margin: 0;
@@ -16,15 +16,23 @@ body{
   
 }
 .Block img {
-  height: 66%;
+  height: 67%;
   overflow: hidden;
-  margin-left: 30%;
+  margin-left: 33%;
   margin-top: 90px;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .Carousel{
   width: 100%;
+}
+#shop{
+  height: 850px;
+  width: 100%;
+  margin-top:10px;
+  margin-bottom: 100px;
+  float: left;
+
 }
 #popular{
   padding-top: 50px;
@@ -41,6 +49,8 @@ body{
 .UPPER{
   margin: 0;
   padding: 0;
+  float: left;
+  width: 100%;
 }
 .input_block{
   position: absolute;
@@ -56,7 +66,7 @@ body{
 }
 #enter_your{
   font-size: 40px;
-  padding-left: 30%;
+  padding-left: 33%;
   padding-top: 60px;
   font-size: 55px;
 } 
@@ -71,7 +81,7 @@ body{
     position: relative; 
     height: 750px;
     width: 700px;
-    margin: 90px 0 50px 29%;
+    margin: 90px 0 50px 33%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);;
 }
 #logo1, #logo2{

@@ -1,6 +1,5 @@
 import React from 'react';
 import NAV from './components/NAV'
-import Carousel from './components/Carousel'
 import Form from './components/form'
 import logo from './Photos/lime.jpg'
 import mint from './Photos/mint.jpg'
@@ -8,6 +7,7 @@ import Footer from "./components/Footer"
 import './App.css'
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import Recipes from "./Pages/Recipes"
+import shop_img from  "./Photos/shop.jpg"
 
 function App() {
 
@@ -18,7 +18,8 @@ function App() {
             <Route exact path="/" render={ props =>(
               <React.Fragment>
                 <div className="UPPER">
-                  <Carousel className="Carousel"/>
+                  {/* <Carousel className="Carousel"/> */}
+                  <img src={shop_img} alt="coffee shop" id="shop"/>
                 </div>
             
 
