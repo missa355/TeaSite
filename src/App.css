@@ -16,10 +16,10 @@ body{
   
 }
 .Block img {
-  height: 67%;
+  height: 850px;
   overflow: hidden;
   margin-left: 33%;
-  margin-top: 90px;
+  margin-top: 10px;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -29,16 +29,9 @@ body{
 #shop{
   height: 850px;
   width: 100%;
-  margin-top:10px;
+  margin-top:30px;
   margin-bottom: 100px;
-  float: left;
 
-}
-#popular{
-  padding-top: 50px;
-  margin-left: 37%;
-  font-size: 60px;
-  margin-bottom: 40px;
 }
 .second_level{
   background: rgb(245, 246, 255);
@@ -49,8 +42,36 @@ body{
 .UPPER{
   margin: 0;
   padding: 0;
-  float: left;
   width: 100%;
+  position: relative;
+}
+.UPPER h1{
+  position: absolute;
+  margin: 270px 0px 100px 70px;
+  color: white;
+  font-size: 100px;
+}
+#breakfast{
+  margin: 600px 0px 0px 38%;
+  position: absolute;
+
+}
+.UPPER p{
+  position: absolute;
+  margin: 400px 0px 100px 150px;
+  color: white;
+  font-size: 35px;
+}
+#btn1{
+  position: absolute;
+}
+#black{
+  height: 850px;
+  width: 100%;
+  margin-top:30px;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
 }
 .input_block{
   position: absolute;
@@ -103,7 +124,7 @@ body{
   float: left;
   width: 900px;
   height: 406px;;
-  margin: 185px 0 0 300px;
+  margin: 185px 0 0 270px;
   padding-top: 0;
 }
 .Text2{
@@ -119,9 +140,9 @@ body{
 .btn1{
   border-radius: 10px;
   border: 1px solid black;
-  padding: 10px 15px 0px 15px;
+  padding: 20px 15px 0px 15px;
   margin-top: 30px;
-  float: left;
+  float: left; 
 }
 .btn1:hover{
   background: rgba(190, 216, 200, 0.19);

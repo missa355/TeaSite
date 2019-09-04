@@ -8,6 +8,7 @@ import './App.css'
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import Recipes from "./Pages/Recipes"
 import shop_img from  "./Photos/shop.jpg"
+import tea_photo from "./Photos/breakfast.png"
 
 function App() {
 
@@ -19,6 +20,12 @@ function App() {
               <React.Fragment>
                 <div className="UPPER">
                   {/* <Carousel className="Carousel"/> */}
+                  <div id="black"/>
+                  <div id="top_layer">
+                    <h1>Check Recipes Other Shared</h1>
+                    <p>Don't Be Shy To Add Yours As Well</p>
+                    <img src={tea_photo} alt="breakfast" id="breakfast"/>
+                  </div>
                   <img src={shop_img} alt="coffee shop" id="shop"/>
                 </div>
             
