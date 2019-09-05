@@ -8,6 +8,14 @@ export class form extends Component {
     state = {
         choose:"",
     }
+    componentDidMount() {
+        axios.get('http://192.168.63.138:5000/Recipes/')
+        .then(res => console.log(res.data))
+          .catch((error) => {
+            console.log(error);
+          })
+    
+      }
 
     click = (e) => {
         e.preventDefault()
@@ -18,9 +26,12 @@ export class form extends Component {
             Rating: 5,
             description:document.getElementById("description").value
             }
+        console.log(recipe)
 
-        axios.post("http://localhost:5000/Recipes/add", recipe) //recipe is sent to db
+        axios.post("http://192.168.63.138:5000/Recipes/add", recipe) //recipe is sent to db
         .then(res => console.log(res.data)); 
+
+        // window.location = '/';
     }
 
     add = (text) =>{

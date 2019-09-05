@@ -12,7 +12,7 @@ router.route('/add').post((req, res) => {
   const comp = req.body.comp;
   const choose = req.body.choose;
   const Rating = Number(req.body.Rating)
-  const description = req.body.description
+  const description = req.body.description;
 
   const newRecipe = new Recipe({recipename, comp, choose, Rating, description});
 

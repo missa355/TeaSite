@@ -8,13 +8,10 @@ export class Menu extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/Recipes/')
+        axios.get('http://192.168.63.138:5000/Recipes/')
           .then(response => {
-            if (response.data.length > 0) {
               this.setState({
-                Recipes: response.data.map(Recipes => Recipes)
-              })
-            }
+                Recipes: response.data})
           })
           .catch((error) => {
             console.log(error);
