@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import "./Footer.css"
+import tearura from "../Photos/tearura.png"
+
 
 export class Footer extends Component {
     render() {
         return (
             <div>
-                <ul className="LISTS_OF_LISTS">
+                {/* <ul className="LISTS_OF_LISTS">
                     <li className="inner_li">
                         <ul className="INNER_LIST">
                             <li><h3>PRODUCTS</h3></li>
@@ -42,7 +44,9 @@ export class Footer extends Component {
                             <li>COFEE SOURCE</li>
                         </ul>
                     </li>
-                </ul>
+                </ul> */}
+                <img src={tearura} alt="IMG"/>
+
             </div>
         )
     }

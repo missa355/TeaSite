@@ -8,7 +8,7 @@ export class Menu extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://192.168.63.138:5000/Recipes/')
+        axios.get('http://localhost:5000/Recipes/')
           .then(response => {
               this.setState({
                 Recipes: response.data})

@@ -9,7 +9,7 @@ export class form extends Component {
         choose:"",
     }
     componentDidMount() {
-        axios.get('http://192.168.63.138:5000/Recipes/')
+        axios.get('http://localhost:5000/Recipes/')
         .then(res => console.log(res.data))
           .catch((error) => {
             console.log(error);
@@ -28,7 +28,7 @@ export class form extends Component {
             }
         console.log(recipe)
 
-        axios.post("http://192.168.63.138:5000/Recipes/add", recipe) //recipe is sent to db
+        axios.post("http://localhost:5000/Recipes/add", recipe) //this 
         .then(res => console.log(res.data)); 
 
         // window.location = '/';
@@ -54,7 +54,7 @@ export class form extends Component {
                         <Form.Label><h4>How to prepare</h4></Form.Label>
                         <Form.Control id="description" rows="3" />
                     </Form.Group>
-                    <Button onClick={this.click} variant="success" size="lg" block>
+                    <Button onClick={this.click} variant="dark" size="lg" block>
                         ADD YOUR RECEPIE
                     </Button>
                 </form>

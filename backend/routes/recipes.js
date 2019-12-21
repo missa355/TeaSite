@@ -7,7 +7,7 @@ router.route('/').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/add').post((req, res) => {
+router.route('/add').post((req, res) => { //if localhost:500/add is called
   const recipename = req.body.recipename;
   const comp = req.body.comp;
   const choose = req.body.choose;
@@ -16,7 +16,7 @@ router.route('/add').post((req, res) => {
 
   const newRecipe = new Recipe({recipename, comp, choose, Rating, description});
 
-  newRecipe.save()
+  newRecipe.save() //saves the recipe(which was made into proper form) in the mongodb database
     .then(() => res.json('Recipe added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
