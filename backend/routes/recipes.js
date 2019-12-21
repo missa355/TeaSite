@@ -1,6 +1,8 @@
 const router = require('express').Router();
+//creating Recipe object by requiring class
 let Recipe = require('../models/recipes.model');
 
+//this the part that is triggerd by axios.get(localhost/Recipes). res.json send the data to axios as a json format
 router.route('/').get((req, res) => {
   Recipe.find()
     .then(recipes => res.json(recipes))
