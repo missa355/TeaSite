@@ -36,7 +36,7 @@ function App() {
                   <div className="2Ablock">
                     <img src={citrus} alt="IMG" id="logo1"/>
                     <div className="Text">
-                      <h2>FEEL THE CIRTUS TASTE.</h2> <br />
+                      <h4>FEEL THE CIRTUS TASTE.</h4> <br />
                       <p>Try a lemon taste to relax your mind with the citrus feeling .One of our most demanded products
                         is open for you to own,
                         order now and give yourslef a break.
@@ -50,7 +50,7 @@ function App() {
                   <div className="twoBlock">
                     <img src={beverage} alt="IMG" id="logo2"/>
                     <div className="Text">
-                      <h2>INDULGE IN THE PUNGENT MENTHOL AROMA AND FLAVOUR.</h2> <br />
+                      <h4>INDULGE IN THE PUNGENT MENTHOL AROMA AND FLAVOUR.</h4> <br />
                       <p>Our minty recipes are what we represent. From tea to milkshake, we take
                        our mint falvour very seriouse and you can vouche for it after trying it.
                       </p>

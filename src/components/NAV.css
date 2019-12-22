@@ -6,16 +6,16 @@ body{
 }
 #first{
     float: left;
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
     margin: 17px 0 10px 0px;
 }
 .Link{
     color: black;
     text-decoration: none !important;
     padding: 15px 50px 0px 50px;
-    font-size: 15px;
-    margin-top: 45px;
+    font-size: 12px;
+    margin-top: 20px;
     cursor: pointer;
     float: left;
 }
