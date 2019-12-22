@@ -42,19 +42,19 @@ export class form extends Component {
         return (
             <div>
                 <form>
-                    <h4 style={name}>What is it called?</h4>
-                    <Form.Control id="name" type="text" size="lg" placeholder="Name your blend..." />
+                    <h5 style={name}>What is it called?</h5>
+                    <Form.Control id="name" type="text" size="small" placeholder="Name your blend..." />
                     <br />
-                    <h4 style={name}>What do you recommend to enjoy it with?</h4>
-                    <Form.Control id="extra" type="text" size="lg" placeholder="leave empty if there is none..." />
+                    <h5 style={name}>What do you recommend to enjoy it with?</h5>
+                    <Form.Control id="extra" type="text" size="small" placeholder="leave empty if there is none..." />
                     <br />
                     <Add title={this.add} id="use"/>
                     <br />
                     <Form.Group>
-                        <Form.Label><h4>How to prepare</h4></Form.Label>
+                        <Form.Label><h5>How to prepare</h5></Form.Label>
                         <Form.Control id="description" rows="3" />
                     </Form.Group>
-                    <Button onClick={this.click} variant="dark" size="lg" block>
+                    <Button onClick={this.click} variant="dark" size="small" block>
                         ADD YOUR RECEPIE
                     </Button>
                 </form>

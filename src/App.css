@@ -1,7 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-  zoom: 75%;
   background-color: white;
 }
 *{
@@ -9,11 +8,11 @@ body{
   padding: 0;
 }
 .main_block{
-    width: 75%;
+    width: 65%;
     height: 100%;
     background-color: white;
     float: left;
-    margin-left:12.75%;
+    margin-left:16%;
     
 }
 .Block{
@@ -35,18 +34,21 @@ body{
 }
 
 #shop{
-  height: 637.5px;
+  height: 500px;
   width: 100%;
   margin-top:30px;
   margin-bottom: 100px;
+  
 
 }
 #breakfast{
-    margin: 450px 0px 0px 38%;
+    margin: 350px 0px 0px 38%;
     position: absolute;
     display: block;
-    margin-left: 40%;
+    margin-left: 45%;
     margin-right: auto;
+    height: 150px;
+
 }
 .UPPER{
   width: 100%;
@@ -57,39 +59,47 @@ body{
 }
 .UPPER h1{
   position: absolute;
-  margin: 202.5px 0px 100px 70px;
+  margin: 150px 0px 100px 70px;
   color: white;
-  font-size: 75px;
+  font-size: 45px;
 }
 .UPPER p{
     position: absolute;
-    margin: 300px 0px 100px 80px;
+    margin: 230px 0px 100px 80px;
     color: white;
-    font-size: 26.25px;
+    font-size: 23.25px;
+  }
+  #black{
+    height: 500px;
+    width: 100%;
+    margin-top:30px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
   }
 .second_level{
   background: rgb(245, 246, 255);
-  height: 1550px;
+  height: 1250px;
   float: left;
   width: 100%;
 }
 #logo1, #logo2{
     float: left;
-    width: 495px;
-    height:334.5px;
-    margin: 100px 0 100px 10%;
+    width: 300px;
+    height:250px;
+    margin: 100px 0 0px 10%;
     border-radius: 12px;
   
 }
 
 .Text{
-    padding: 30px;
+    padding: 15px;
     text-align: left;
-    font-size: 21px;
+    font-size: 16px;
     float: left;
-    width: 700px;
-    height: 406px;;
-    margin: 100px 0 0 270px;
+    width: 500px;
+    height: 150px;;
+    margin: 100px 0 0 200px;
     padding-top: 0;
 }
 
@@ -105,50 +115,45 @@ body{
     cursor: pointer;
   }
   .twoBlock{
-    margin-top: 650px;
+    margin-top: 500px;
   }
 
 #btn1{
   position: absolute;
 }
-#black{
-  height: 637.5px;
-  width: 100%;
-  margin-top:30px;
-  margin-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-}
+
 .input_block{
   position: absolute;
   background-color: white; 
-  height: 650px;
-  width: 600px;
+  height: 470px;
+  width: 420px;
   padding: 30px;
-  padding-top: 70px;
-  margin-top: 50px;
-  margin-left: 7%;
+  padding-top: 30px;
+  margin-top: 40px;
+  margin-left: 8%;
   overflow: hidden;
+  font-size: 10px;
 }
 #enter_your{
   font-size: 40px;
   padding-left: 33%;
   padding-top: 60px;
-  font-size: 55px;
+  font-size: 35px;
 } 
 .third_level{
   float: left;
   width: 100%;
   margin-top: 70px;
+  background-color: whitesmoke;
   
   
 }
 .outer{
     background: rgb(61, 60, 60);
     position: relative; 
-    height: 750px;
-    width: 700px;
-    margin: 90px 0 50px;
+    height: 550px;
+    width: 500px;
+    margin: 50px 0 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     display: block;
@@ -159,9 +164,8 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  height: 400px;
-  border-radius: 90px;
+  width: 250px;
+  height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 100px;
   margin-bottom: 10px;

@@ -31,7 +31,6 @@ function App() {
                   </div>
                   
                 </div>
-            
 
                 <div className="second_level">
                   <div className="2Ablock">
