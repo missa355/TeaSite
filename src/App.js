@@ -64,14 +64,9 @@ function App() {
 
                 <div className="third_level">
                   <h1 id="enter_your"> Show the world your taste</h1>
-                  <div className="outer">
-                    <div className="input_block">
-                      <Form/>
-                    </div>
+                  <Form/>
                  </div>
                  <img src={tearura} alt="IMG" className="tearura"/>
-
-                </div>
                   </React.Fragment>
                 )}/>
             <Route exact path="/recipes" component={Recipes} />

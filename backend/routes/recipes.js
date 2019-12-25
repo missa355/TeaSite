@@ -9,7 +9,7 @@ router.route('/').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/add').post((req, res) => { //if localhost:500/add is called
+router.route('/add').post((req, res) => { //if localhost:5000/add is called
   const recipename = req.body.recipename;
   const comp = req.body.comp;
   const choose = req.body.choose;
