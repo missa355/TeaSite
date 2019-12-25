@@ -8,7 +8,8 @@ export class Menu extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/Recipes/')
+                // http://localhost:5000
+        axios.get('https://a22fae55.ngrok.io/Recipes/')
           .then(response => {
               this.setState({
                 Recipes: response.data})
