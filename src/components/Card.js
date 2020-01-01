@@ -6,11 +6,11 @@ export class Card extends Component {
         return (
             <div className="CARD"> 
             
-                <h3>{this.props.info.recipename}</h3>
+                <h4>{this.props.info.recipename}</h4>
                 <p>Take it with : {this.props.info.comp}</p>
                 <p>best for : {this.props.info.choose}</p>
                 <p>Rating: {this.props.info.Rating}</p>
-                <p>description : {this.props.info.description}</p>
+                {/* <p>description : {this.props.info.description}</p> */}
                 
             </div>
         )

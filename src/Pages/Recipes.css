@@ -5,4 +5,8 @@ body{
 .TEXT{
     width: 100%;
     padding: 30px;
+
+}
+.TEXT h2{
+    margin: 100px 0 50px 75px;
 }

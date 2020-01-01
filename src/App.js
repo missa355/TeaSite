@@ -69,9 +69,8 @@ function App() {
                  <img src={tearura} alt="IMG" className="tearura"/>
                   </React.Fragment>
                 )}/>
-            <Route exact path="/recipes" component={Recipes} />
-
             </div>
+            <Route exact path="/recipes" component={Recipes} />
         </Router>
       );
 }

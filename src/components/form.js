@@ -60,7 +60,7 @@ export class form extends Component {
                         <Form.Control id="name" type="text" size="small" placeholder="Name your blend..." />
                         <br />
                         <h5 style={name}>What do you recommend to enjoy it with?</h5>
-                        <Form.Control id="extra" type="text" size="small" placeholder="leave empty if there is none..." />
+                        <Form.Control id="extra" type="text" size="small" placeholder="Cake, biscuit, etc..." />
                         <br />
                         <Add title={this.add} id="use"/>
                         <br />

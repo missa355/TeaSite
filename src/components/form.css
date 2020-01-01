@@ -25,6 +25,7 @@
       margin-right: auto;
   }
   .thank_you{
+    transition: 0.1s;
     position: absolute;
     background-color: whitesmoke; 
     height: 550px;

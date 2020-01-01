@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Card from './Card';
 import axios from "axios"
+import "./Menu.css"
 
 export class Menu extends Component {
     state = {
