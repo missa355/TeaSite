@@ -14,7 +14,7 @@ export class form extends Component {
         opacity2: 0
     }
     componentDidMount() {
-        axios.get('https://f63b4bbe.ngrok.io/Recipes/')
+        axios.get('hhttps://8df21978.ngrok.io/Recipes/')
         .then(res => console.log(res.data))
           .catch((error) => {
             console.log(error);
@@ -37,7 +37,7 @@ export class form extends Component {
             this.setState({opacity1: 1, opacity2: 0})
           }, 3000);
 
-        axios.post("https://f63b4bbe.ngrok.io/Recipes/add", recipe) //this 
+        axios.post("https://8df21978.ngrok.io/Recipes/add", recipe) //this 
         .then(res => console.log(res.data)); 
             
         // window.location = '/';
