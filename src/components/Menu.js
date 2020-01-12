@@ -10,7 +10,7 @@ export class Menu extends Component {
 
     componentDidMount() {
                 // http://localhost:5000
-        axios.get('https://8df21978.ngrok.io/Recipes/')
+        axios.get('https://teaaurora.ngrok.io/Recipes/')
           .then(response => {
               this.setState({
                 Recipes: response.data})
