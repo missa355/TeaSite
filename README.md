@@ -2,12 +2,12 @@
 Recipe Sharing
 
 Devloped by:
-  React
-  Node.js
-  Express.js
+  React,
+  Node.js,
+  Express.js,
   MongoDB.Atlas
   
  Utilizes:
-  REST API
-  Database
+  REST API,
+  Database,
   Dynamic Recipe page
