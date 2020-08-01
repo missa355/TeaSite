@@ -1,0 +1,55 @@
+.img_container{
+    width: 70%;
+    margin: 0;
+    height: 500px;
+    /* border: 1px solid black; */
+    float: left;
+    /* background-image: url("../../Photos/mint_big.jpg"); */
+    background-size: cover;
+    /* border-bottom-left-radius: 10px; */
+    border-top-left-radius: 10px;
+
+}
+.details{
+    width: 30%;
+    margin: 0;
+    height: 500px;
+    /* border: 1px solid black; */
+    float: left;
+    background-color: rgba(29, 29, 31, 0.925);
+    color: white;
+    padding: 20px;
+
+}
+.purchase{
+    /* border: 1px black solid; */
+    width: 70%;
+    /* height: 250px; */
+    float: left;
+    margin-bottom: 10%;
+    background-color: rgb(249, 249, 250);
+    padding: 30px;
+}
+
+#exampleSelect{
+    width: 11%;
+}
+
+.purchase h2{
+    padding-bottom: 30px;
+}
+
+#exampleEmail{
+    width: 11%;
+}
+
+.purchase{
+    display: flexbox;
+}
+
+.filler_box{
+    width: 30%;
+    float: left;
+    background-color: burlywood;
+    height: 345px;
+}

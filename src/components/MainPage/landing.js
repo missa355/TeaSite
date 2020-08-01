@@ -16,6 +16,14 @@ import shop_img from  "../../Photos/shop.jpg"
 import tea_photo from "../../Photos/breakfast.png"
 import TeaCard from "../TeaCard/TeaCard"
 
+const desc = [
+  "A mint as graceful as the Era it was used in Japan",
+  "British imported Lavender with an Aroma that labled it as one of the best.",
+  "A completely organic thyme with almost no intervention.",
+  "Tea leaves are processed using traditional Chinese methods."
+
+]
+
 export class landing extends Component {
     render() {
         return (
@@ -27,8 +35,8 @@ export class landing extends Component {
                   {/* <Carousel className="Carousel"/> */}
                   <div id="black"/>
                   <div id="top_layer">
-                    <h1>Check Recipes Other Shared</h1>
-                    <p>Don't Be Shy To Add Yours As Well</p>
+                    <h1>Check Products made by the people!</h1>
+                    <p>For the People.</p>
                     <img src={tea_photo} alt="breakfast" id="breakfast"/>
                     <img src={shop_img} alt="coffee shop" id="shop"/>
                   </div>
@@ -66,15 +74,53 @@ export class landing extends Component {
                 </div>
               </div>
 
+              <div className="product_tag">
+                <h2><b>Popular Products</b></h2>
 
-                <div className="TeaCard_container">
-                  <TeaCard img={mint_card}/>
-                  <TeaCard img={lavender}/>
-                  <TeaCard img={thyme}/>
-                  <TeaCard img={green}/>
+                
+              </div>
+
+              <div className="TeaCard_container">
+                  <TeaCard index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
+                  <TeaCard index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
+                  <TeaCard index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
+                  <TeaCard index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
  
 
-                </div>
+              </div>
+
+              <div className="product_tag">
+                <h2><b>Recommended Products</b></h2>
+
+                
+              </div>
+
+
+              <div className="TeaCard_container">
+                  <TeaCard index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
+                  <TeaCard index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
+                  <TeaCard index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
+                  <TeaCard index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
+ 
+
+              </div>
+
+
+              <div className="product_tag">
+                <h2><b>New Products</b></h2>
+
+                
+              </div>
+
+
+              <div className="TeaCard_container">
+                  <TeaCard index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
+                  <TeaCard index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
+                  <TeaCard index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
+                  <TeaCard index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
+ 
+
+              </div>
 
 
                 

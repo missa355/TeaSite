@@ -164,10 +164,21 @@ body{
   /* border: black 1px solid; */
   padding: 20px;
   padding-top: 100px;
-  margin: 100px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
   background: rgb(242, 243, 248);
   justify-content: space-around;
-  
+}
+.product_tag{
+  width: 100%;
+  /* border: 1px black solid; */
+  float: left;
+  margin-top: 50px;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 2.1%;
+}
 
+.product_tag h2{
+  font-size: 50px;
 
 }

@@ -16,6 +16,7 @@
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.13.1",
     "react-rater": "^5.1.0",
+    "react-rating": "^2.0.5",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "react-scroll": "^1.7.12",
