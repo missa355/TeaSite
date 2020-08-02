@@ -1,15 +1,45 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const stripe = require("stripe")("sk_test_51HBVp6HERVJg4BokUytFKxcu5Df7mCM4gq8z9MlJ7NSbFLDhNKtIlZBzM4Zxss2pylrFNs0QcEH25XWYkb4gL8Aa00no4OIrsa")
+const uuid  = require("uuid/v4")
 
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
 
+
+// middelware injection
 app.use(cors());
 app.use(express.json());
 
+//routes
+app.post("/payment", (req, res) => {
+  const {product, token} = req.body;
+  console.log("PRODUCT:", product);
+  console.log("PRICE:", product.price)
+  const idempontencyKey = uuid(); //to make sure user doesnt get charged the same item twice
+
+  return stripe.customers.create({ //this creates a stripe instance to return to front end
+    email:token.email,
+    source: token.id 
+
+  })
+  .then(customer => {
+    stripe.charges.create({ //continues to update the same stripe instance
+      amount: product.price * 100 ,// to get it in cents
+      currency: "usd",
+      customer: customer.id,
+      receipt_email: token.email
+    }, {idempontencyKey})
+  })
+  .then(result => res.status(200).json(result))
+  .catch(err =>  console.log(err))
+})
+
+
+//listen/connect
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
 );
@@ -17,9 +47,6 @@ const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
-
-const recipesRouter = require('./routes/recipes');
-app.use('/recipes', recipesRouter);
 
 
 app.listen(port, () => {

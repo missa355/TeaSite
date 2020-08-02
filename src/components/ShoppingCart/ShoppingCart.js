@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "./ShoppingCart.css"
 import Item from "../Item/item"
+import { Button } from 'reactstrap';
+
 
 export class ShoppingCart extends Component {
     render() {
@@ -48,6 +50,7 @@ export class ShoppingCart extends Component {
                             <p>CART TOTAL</p>
                             <b><h3>CA 49.95</h3></b>
                             <p id="small_font">Shipping and Taxes calculated at checkout</p>
+                            <Button id="checkout" color="secondary">C H E C K O U T</Button>{' '}
 
 
                         </div>
