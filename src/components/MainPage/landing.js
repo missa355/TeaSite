@@ -114,10 +114,10 @@ export class landing extends Component {
 
 
               <div className="TeaCard_container">
-                  <TeaCard index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
-                  <TeaCard index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
-                  <TeaCard index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
-                  <TeaCard index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
+                  <TeaCard price={9.99} index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
+                  <TeaCard price={8.99} index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
+                  <TeaCard price={10.99} index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
+                  <TeaCard price={21.99} index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
  
 
               </div>

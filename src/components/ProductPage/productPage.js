@@ -21,59 +21,68 @@ export class productPage extends Component {
         
     }
 
+    add = (amount) => {
+        var current = localStorage.getItem("Total")
+        if(current){
+            localStorage.setItem("Total", JSON.stringify(current + amount))
+
+        }
+    }
     render() {
         return (
             <div className="main_block">
                 <NAV className='NAV'/>
-                <div className="img_container" style={this.state.sectionStyle}>
+                <div className="product_container">
+                    <div className="img_container" style={this.state.sectionStyle}>
 
-                </div>
+                    </div>
 
-                <div className="details">
-                    <h2>{this.props.name}</h2>
-                    <br/>
+                    <div className="details">
+                        <h2>{this.props.name}</h2>
+                        <br/>
 
-                    <p>This Japanese mint was harvest from the green fields of kyoto away
-                        from any pollution protected by the foggy enviorement from the sun.
-                    </p>
-                    <br/>
-                    <p>This Japanese mint was harvest from the green fields of kyoto away
-                        from any pollution protected by the foggy enviorement from the sun.
-                    </p>
+                        <p>This Japanese mint was harvest from the green fields of kyoto away
+                            from any pollution protected by the foggy enviorement from the sun.
+                        </p>
+                        <br/>
+                        <p>This Japanese mint was harvest from the green fields of kyoto away
+                            from any pollution protected by the foggy enviorement from the sun.
+                        </p>
 
-                    <br/>
-                    <p>You are able to purchase 2 OZ, 4 OZ or 8 OZ depending on your needs. 
-                    </p>
+                        <br/>
+                        <p>You are able to purchase 2 OZ, 4 OZ or 8 OZ depending on your needs. 
+                        </p>
 
-                </div>
+                    </div>
 
-                <div className="purchase">
-                    <h2>Purchase details</h2>
-                    <Form>
-                        <FormGroup>
-                            <Label for="exampleSelect">Quantity</Label>
-                            <Input type="select" name="select" id="exampleSelect">
-                            <option>2 OZ</option>
-                            <option>4 OZ</option>
-                            <option>8 OZ</option>
+                    <div className="purchase">
+                        <h2>Purchase details</h2>
+                        <Form>
+                            <FormGroup>
+                                <Label for="exampleSelect">Quantity</Label>
+                                <Input type="select" name="select" id="exampleSelect">
+                                <option>2 OZ</option>
+                                <option>4 OZ</option>
+                                <option>8 OZ</option>
 
-                            </Input>
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="exampleEmail">How many of the selected Quanitiy?</Label>
-                            <Input
-                            type="text"
-                            name="email"
-                            id="exampleEmail"
-                            placeholder="..."
-                            />
-                        </FormGroup>
-                        <Link to=""><Button style={{backgroundColor:"rgba(29, 29, 31, 0.925)", color:"white"}}>Add to Cart</Button></Link>
+                                </Input>
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="exampleEmail">How many of the selected Quanitiy?</Label>
+                                <Input
+                                type="text"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="..."
+                                />
+                            </FormGroup>
+                            <Button onClick={this.add(this.props.price)} style={{backgroundColor:"rgba(29, 29, 31, 0.925)", color:"white"}}>Add to Cart</Button>
 
-                    </Form>
-                </div>
-                <div className="filler_box">
+                        </Form>
+                    </div>
+                    <div className="filler_box">
 
+                    </div>
                 </div>
                 
                 

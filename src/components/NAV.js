@@ -14,6 +14,8 @@ export class NAV extends Component {
                         {/* <Link to="/" className="Link">T E A</Link>
                         <Link to="/" className="Link"> S W E E T S</Link> */}
                         <Link to="/recipes" className="Link">M E N U</Link>
+                        <Link to="/ShoppingCart" className="Link">C A R T</Link>
+
                         {/* <Link to="/" className="Link">A D D &emsp; R E C I P E</Link> */}
                             {/* <ul className="header">
                                 <li><Link to="/" className="Link">C O F F E E</Link></li>
