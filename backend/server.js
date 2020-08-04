@@ -51,15 +51,18 @@ app.post("/payment", (req, res) => {
   .catch(err =>  console.log(err))
 })
 
+const productsRouter = require('./routes/product');
+app.use('/product', productsRouter);
+
 
 //listen/connect
-// const uri = process.env.ATLAS_URI;
-// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
-// );
-// const connection = mongoose.connection;
-// connection.once('open', () => {
-//   console.log("MongoDB database connection established successfully");
-// })
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
+);
+const connection = mongoose.connection;
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully");
+})
 
 
 app.listen(port, () => {

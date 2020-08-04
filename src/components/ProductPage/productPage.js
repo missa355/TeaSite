@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NAV from '../NAV'
 import "./productPage.css"
-import mint_big from "../../Photos/mint_big.jpg"
+import mint_big from "../../Photos/mint_card.jpg"
 import lavender_big from "../../Photos/lavender_big.jpg"
 import thyme_big from "../../Photos/thyme_big.jpg"
 import green_big from "../../Photos/green_big.jpg"
@@ -16,15 +16,30 @@ const imgs = [mint_big, lavender_big, thyme_big, green_big]
 export class productPage extends Component {
     state = {
     sectionStyle : {
-            backgroundImage: `url(${imgs[this.props.index]})`
+            backgroundImage: `url(${this.props.img})`
     }
         
     }
 
-    add = (amount) => {
-        var current = localStorage.getItem("Total")
+
+    componentDidMount = ()=>{
+        console.log(this.props)
+    }
+    add = (e, amount) => {
+        e.preventDefault()
+        var current = localStorage.getItem("Cart")
         if(current){
-            localStorage.setItem("Total", JSON.stringify(current + amount))
+            // console.log("current is", parseFloat(current))
+            // console.log("sum is", parseFloat(current), "+",  amount)
+
+            var newtok = JSON.parse(current)
+            newtok.push(amount)
+            console.log(newtok)
+
+            localStorage.setItem("Cart", JSON.stringify(newtok))
+
+        }else{
+            localStorage.setItem("Cart", JSON.stringify([amount]))
 
         }
     }
@@ -76,7 +91,7 @@ export class productPage extends Component {
                                 placeholder="..."
                                 />
                             </FormGroup>
-                            <Button onClick={this.add(this.props.price)} style={{backgroundColor:"rgba(29, 29, 31, 0.925)", color:"white"}}>Add to Cart</Button>
+                            <Button onClick={(e)=> this.add(e, {name:this.props.name, img:this.props.small_img, price:this.props.price})} style={{backgroundColor:"rgba(29, 29, 31, 0.925)", color:"white"}}>Add to Cart</Button>
 
                         </Form>
                     </div>

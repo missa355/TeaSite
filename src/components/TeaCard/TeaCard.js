@@ -11,6 +11,11 @@ import {
 import Rating from 'react-rating'
 
 export class TeaCard extends Component {
+    componentDidMount = () => {
+        console.log("props are", this.props)
+    }
+
+    
     render() {
         return (
             <div className="TeaCard">
@@ -20,7 +25,7 @@ export class TeaCard extends Component {
                     <CardTitle>{this.props.title}</CardTitle>
                     <CardSubtitle><Rating  initialRating={4.5} readonly/></CardSubtitle>
                     <CardText>{this.props.description}</CardText>
-                    <Link to={`/products/${this.props.index}`}><Button style={{backgroundColor:"black", color:"white"}}>check it out!</Button></Link>
+                    <Link to={`/products/${this.props.indx}`}><Button style={{backgroundColor:"black", color:"white"}}>check it out!</Button></Link>
                     </CardBody>
                 </Card>
             </div>

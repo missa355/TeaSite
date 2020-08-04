@@ -5,7 +5,7 @@ import thyme from "../../Photos/thyme.jpg"
 import green from "../../Photos/green.jpg"
 
 
-
+import axios from "axios"
 import NAV from '../NAV'
 import Form from '../form'
 import beverage from '../../Photos/undraw_hot_beverage_35uj.svg'
@@ -25,6 +25,36 @@ const desc = [
 ]
 
 export class landing extends Component {
+    state={
+      names:[],
+      prices:[],
+      card_links:[],
+      big_links:[],
+      ratings:[],
+      desc:[]
+    }
+
+    componentDidMount = () => {
+      axios.get('http://localhost:5000/product/')
+      .then(res => {
+        for(var i=0; i<res.data.length; i++){
+          this.setState({names:[...this.state.names, res.data[i].name]})
+          this.setState({prices:[...this.state.prices, res.data[i].price]})
+          this.setState({card_links:[...this.state.card_links, res.data[i].link]})
+          this.setState({big_links:[...this.state.big_links, res.data[i].link_big]})
+          this.setState({ratings:[...this.state.ratings, res.data[i].rating]})
+          this.setState({desc:[...this.state.desc, res.data[i].description]})
+
+
+        }
+      })
+      .catch((error) => {
+          console.log(error);
+        })
+
+      console.log(this.state)
+    }
+
     render() {
         return (
           <div>
@@ -81,10 +111,9 @@ export class landing extends Component {
               </div>
 
               <div className="TeaCard_container">
-                  <TeaCard index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
-                  <TeaCard index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
-                  <TeaCard index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
-                  <TeaCard index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
+              {this.state.names.map((block, i) => 
+                  <TeaCard indx={i} key={i} img={this.state.card_links[i]} title={this.state.names[i]} review="4/5" description={this.state.desc[i]}/>
+                )}
  
 
               </div>
@@ -97,10 +126,10 @@ export class landing extends Component {
 
 
               <div className="TeaCard_container">
-                  <TeaCard index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
-                  <TeaCard index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
-                  <TeaCard index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
-                  <TeaCard index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
+              {this.state.names.map((block, i) => 
+                  <TeaCard indx={i} key={i} img={this.state.card_links[i]} title={this.state.names[i]} review="4/5" description={this.state.desc[i]}/>
+
+                )}
  
 
               </div>
@@ -114,10 +143,10 @@ export class landing extends Component {
 
 
               <div className="TeaCard_container">
-                  <TeaCard price={9.99} index={1} img={mint_card} title="Japanese mint." review="4/5" description={desc[0]}/>
-                  <TeaCard price={8.99} index={2} img={lavender} title="English Lavender." review="4/5" description={desc[1]}/>
-                  <TeaCard price={10.99} index={3} img={thyme} title="Arabic Thyme." review="4/5" description={desc[2]}/>
-                  <TeaCard price={21.99} index={4} img={green} title="Chinese Green Tea." review="4/5" description={desc[3]}/>
+              {this.state.names.map((block, i) => 
+                  <TeaCard indx={i} key={i} img={this.state.card_links[i]} title={this.state.names[i]} review="4/5" description={this.state.desc[i]}/>
+
+                )}
  
 
               </div>

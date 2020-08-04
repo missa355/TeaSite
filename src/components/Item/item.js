@@ -2,16 +2,22 @@ import React, { Component } from 'react'
 import "./item.css"
 
 export class item extends Component {
+    state = {
+        sectionStyle : {
+                backgroundImage: `url(${this.props.img})`
+        }
+            
+        }
     render() {
         return (
             <div className="itembox">
-                <div className="product_pic">
+                <div className="product_pic" style={this.state.sectionStyle}>
 
                 </div>
 
 
                 <div className="product_price">
-                    <p>CA 9.99</p>
+                    <p>CA {this.props.price}</p>
                 </div>
 
                 <div className="product_qty">
@@ -19,7 +25,7 @@ export class item extends Component {
                 </div>
 
                 <div className="product_total">
-                    <p>CA 9.99</p>
+                <p>CA {this.props.price}</p>
 
                 </div>
 

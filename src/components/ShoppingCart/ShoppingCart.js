@@ -61,12 +61,10 @@ export class ShoppingCart extends Component {
                             </div>
 
                         </div>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        
-                        <Item/>
+                        {JSON.parse(localStorage.getItem("Cart")).map((block, i) => 
+                            <Item img={block.img} name={block.name} price={block.price}/>
+
+                        )}
 
 
 
