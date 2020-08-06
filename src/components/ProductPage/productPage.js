@@ -8,11 +8,21 @@ import green_big from "../../Photos/green_big.jpg"
 import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { Button
   } from 'reactstrap';
-  import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const imgs = [mint_big, lavender_big, thyme_big, green_big]
 
+// const imgs = [mint_big, lavender_big, thyme_big, green_big]
+const notify = () => {
+    toast.success("Added product to Cart!", {
+        position: toast.POSITION.TOP_LEFT
+      });
 
+ 
+};
+
+toast.configure()
 export class productPage extends Component {
     state = {
     sectionStyle : {
@@ -22,11 +32,14 @@ export class productPage extends Component {
     }
 
 
+
     componentDidMount = ()=>{
         console.log(this.props)
     }
     add = (e, amount) => {
         e.preventDefault()
+        var buttn = document.getElementById("check")
+        buttn.innerHTML = "Added to cart"
         var current = localStorage.getItem("Cart")
         if(current){
             // console.log("current is", parseFloat(current))
@@ -43,6 +56,7 @@ export class productPage extends Component {
 
         }
     }
+
     render() {
         return (
             <div className="main_block">
@@ -82,7 +96,7 @@ export class productPage extends Component {
 
                                 </Input>
                             </FormGroup>
-                            <FormGroup>
+                            {/* <FormGroup>
                                 <Label for="exampleEmail">How many of the selected Quanitiy?</Label>
                                 <Input
                                 type="text"
@@ -90,8 +104,8 @@ export class productPage extends Component {
                                 id="exampleEmail"
                                 placeholder="..."
                                 />
-                            </FormGroup>
-                            <Button onClick={(e)=> this.add(e, {name:this.props.name, img:this.props.small_img, price:this.props.price})} style={{backgroundColor:"rgba(29, 29, 31, 0.925)", color:"white"}}>Add to Cart</Button>
+                            </FormGroup> */}
+                            <Button id="check" onClick={(e)=> {this.add(e, {name:this.props.name, img:this.props.small_img, price:this.props.price, amount:1}); notify()}} style={{backgroundColor:"rgba(29, 29, 31, 0.925)", color:"white"}}>Add to Cart</Button>
 
                         </Form>
                     </div>

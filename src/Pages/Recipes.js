@@ -9,7 +9,6 @@ export default function Recipes() {
     return (
         <div>
             <div className="TEXT">
-            <NAV className='NAV'/>
 
                 <h2>RECIPE PAGE</h2>
                 <Menu/>

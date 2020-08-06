@@ -59,7 +59,7 @@ body{
   }
   .UPPER h1{
     position: absolute;
-    margin: 100px 0px 100px 70px;
+    padding: 100px 0px 100px 0px;
     color: white;
     font-size: 40px;
   }
@@ -106,9 +106,10 @@ body{
     .btn1{
       border-radius: 10px;
       border: 1px solid black;
-      padding: 20px 15px 0px 15px;
-      margin-top: 30px;
       float: left; 
+    }
+    .btn1 p{
+      padding: 0px 15px 15px 15px;
     }
     .btn1:hover{
       background: rgba(190, 216, 200, 0.19);

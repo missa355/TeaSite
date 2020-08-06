@@ -7,6 +7,7 @@ import Landing from "../src/components/MainPage/landing"
 import ProductPage from "../src/components/ProductPage/productPage"
 import Cart from "../src/components/ShoppingCart/ShoppingCart"
 import axios from "axios"
+import ReactNotification from 'react-notifications-component'
 
 
 const productid = [1, 2, 3, 4] 

@@ -56,3 +56,32 @@
     padding-top: 40px;
     font-size: 15px;
 }
+
+#plus{
+    margin-left: 10px;
+    background-color: transparent;
+    border: black 2px solid;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+    min-width: 25px;
+    min-height: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#minus{
+    margin-right: 10px;
+    background-color: transparent;
+    border: black 2px solid;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    min-width: 25px;
+    min-height: 25px;
+    cursor: pointer;
+    text-align: center;
+
+}
