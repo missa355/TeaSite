@@ -14,9 +14,13 @@ const StyledBadge = withStyles((theme) => ({
 }))(Badge);
 
 export default function CustomizedBadges() {
+    var total = 0;
+    if(JSON.parse(localStorage.getItem("Cart"))){
+        total = JSON.parse(localStorage.getItem("Cart")).length
+    }
   return (
     <IconButton aria-label="cart">
-      <StyledBadge badgeContent={JSON.parse(localStorage.getItem("Cart")).length} color="secondary">
+      <StyledBadge badgeContent={total} color="secondary">
         <ShoppingCartIcon />
       </StyledBadge>
     </IconButton>
