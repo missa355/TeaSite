@@ -66,7 +66,7 @@ export class ShoppingCart extends Component {
 
         }
 
-        return fetch("http://localhost:5000/payment", {
+        return fetch("http://teaaurora.chickenkiller.com:4379/payment", {
             method:"POST",
             headers: headers,
             body: JSON.stringify(body)

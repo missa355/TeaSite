@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const stripe = require("stripe")("sk_test_51HBVp6HERVJg4BokUytFKxcu5Df7mCM4gq8z9MlJ7NSbFLDhNKtIlZBzM4Zxss2pylrFNs0QcEH25XWYkb4gL8Aa00no4OIrsa")
 
 require('dotenv').config();
-
+const https = require('https');
+const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 5001;
 
@@ -13,7 +14,11 @@ const port = process.env.PORT || 5001;
 // middelware injection
 app.use(cors());
 app.use(express.json());
-
+//parameter for https
+const options = {
+  key: fs.readFileSync('../key.pem'),
+  cert: fs.readFileSync('../cert.pem')
+};
 //routes
 app.post("/payment", (req, res) => {
   const {product, token} = req.body; //token is the data supplied by FORM
@@ -65,6 +70,10 @@ connection.once('open', () => {
 })
 
 
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
+https.createServer(options, function (req, res) {
+  res.writeHead(200);
+  res.end("hello world\n");
+}).listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
 });
+

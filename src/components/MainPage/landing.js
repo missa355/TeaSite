@@ -35,7 +35,7 @@ export class landing extends Component {
     }
 
     componentDidMount = () => {
-      axios.get('http://localhost:5000/product/')
+      axios.get('http://teaaurora.chickenkiller.com:4379/product/')
       .then(res => {
         for(var i=0; i<res.data.length; i++){
           this.setState({names:[...this.state.names, res.data[i].name]})
