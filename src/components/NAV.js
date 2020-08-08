@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './NAV.css'
 import logo from "../Photos/tea_logo.png"
 import {Link} from "react-router-dom"
-
+import CartBadge from "../components/CartBadge/CartBadge"
 export class NAV extends Component {
     render() {
         return (
@@ -11,10 +11,13 @@ export class NAV extends Component {
                     
                         <Link to="/"><img src={logo} alt="IMG" id="first"/> </Link> 
                         <Link to="/" className="Link" >P R O D U C T S</Link>
+
                         {/* <Link to="/" className="Link">T E A</Link>
                         <Link to="/" className="Link"> S W E E T S</Link> */}
                         {/* <Link to="/recipes" className="Link">M E N U</Link> */}
-                        <Link to="/ShoppingCart" className="Link">C A R T</Link>
+                        {/* <Link to="/ShoppingCart" className="Link">C A R T</Link> */}
+                        <Link to="/ShoppingCart" id="badge"><CartBadge/></Link>
+
 
                         {/* <Link to="/" className="Link">A D D &emsp; R E C I P E</Link> */}
                             {/* <ul className="header">

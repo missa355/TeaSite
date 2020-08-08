@@ -55,6 +55,7 @@ export class productPage extends Component {
             localStorage.setItem("Cart", JSON.stringify([amount]))
 
         }
+        setTimeout(()=> {window.location.reload()}, 1000)
     }
 
     render() {
@@ -88,6 +89,10 @@ export class productPage extends Component {
                         <h2>Purchase details</h2>
                         <Form>
                             <FormGroup>
+                                <Label for="exampleEmail">Price</Label>
+                                <Input plaintext value="CA 9.99" />
+                            </FormGroup>
+                            <FormGroup>
                                 <Label for="exampleSelect">Quantity</Label>
                                 <Input type="select" name="select" id="exampleSelect">
                                 <option>2 OZ</option>
@@ -96,6 +101,7 @@ export class productPage extends Component {
 
                                 </Input>
                             </FormGroup>
+                            
                             {/* <FormGroup>
                                 <Label for="exampleEmail">How many of the selected Quanitiy?</Label>
                                 <Input

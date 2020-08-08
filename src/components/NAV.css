@@ -26,3 +26,13 @@ body{
     height: 115px;
     width: 100%;
 }
+
+#badge{
+    color: black;
+    text-decoration: none !important;
+    padding: 0px 50px 0px 50px;
+    font-size: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: left;
+}

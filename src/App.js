@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-// import Footer from "./components/Footer"
 import './App.css'
 import {BrowserRouter as Router, Route} from "react-router-dom"
-import Recipes from "./Pages/Recipes"
 import Landing from "../src/components/MainPage/landing"
 import ProductPage from "../src/components/ProductPage/productPage"
 import Cart from "../src/components/ShoppingCart/ShoppingCart"
 import axios from "axios"
-import ReactNotification from 'react-notifications-component'
-
 
 const productid = [1, 2, 3, 4] 
 const productname= ["Japanese Mint", "English Lavender", "Araboc Thyme", "Chinese Green Tea"]
@@ -64,13 +60,7 @@ export class App extends Component {
                       </React.Fragment>
                       )}/>
                   )}
-              {/* <Route exact path="/productpage" render={ props =>(
-                <React.Fragment>
-                  <ProductPage/>
-                </React.Fragment>
-                  )}/> */}
               </div>
-              <Route exact path="/recipes" component={Recipes} />
           </Router>
         );
       }
