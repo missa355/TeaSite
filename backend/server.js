@@ -7,7 +7,7 @@ const stripe = require("stripe")("sk_test_51HBVp6HERVJg4BokUytFKxcu5Df7mCM4gq8z9
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 
 // middelware injection
@@ -57,7 +57,7 @@ app.use('/product', productsRouter);
 
 //listen/connect
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true , useUnifiedTopology: true}
 );
 const connection = mongoose.connection;
 connection.once('open', () => {
