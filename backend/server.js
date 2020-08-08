@@ -70,10 +70,7 @@ connection.once('open', () => {
 })
 
 
-https.createServer(options, function (req, res) {
-  res.writeHead(200);
-  res.end("hello world\n");
-}).listen(port, () => {
+https.createServer(options, app).listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
