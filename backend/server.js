@@ -16,8 +16,8 @@ app.use(cors());
 app.use(express.json());
 //parameter for https
 const options = {
-  key: fs.readFileSync('../teaaurora_chickenkiller_com.pem'),
-  cert: fs.readFileSync('../teaaurora_chickenkiller_com.pem')
+  key: fs.readFileSync('../key.pem'),
+  cert: fs.readFileSync('../cert.pem')
 };
 //routes
 app.post("/payment", (req, res) => {
@@ -58,6 +58,10 @@ app.post("/payment", (req, res) => {
 
 const productsRouter = require('./routes/product');
 app.use('/product', productsRouter);
+
+app.get('/.well-known/pki-validation/40A2AF58BE56E3FB1A43F486A515F622.txt', function (req, res) {
+  res.send('hello world')
+})
 
 
 //listen/connect
