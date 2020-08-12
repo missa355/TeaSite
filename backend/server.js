@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const stripe = require("stripe")("sk_test_51HBVp6HERVJg4BokUytFKxcu5Df7mCM4gq8z9MlJ7NSbFLDhNKtIlZBzM4Zxss2pylrFNs0QcEH25XWYkb4gL8Aa00no4OIrsa")
+var path = require('path');
 
 require('dotenv').config();
 const https = require('https');
@@ -60,7 +61,7 @@ const productsRouter = require('./routes/product');
 app.use('/product', productsRouter);
 
 app.get('/.well-known/pki-validation/40A2AF58BE56E3FB1A43F486A515F622.txt', function (req, res) {
-  res.send('hello world')
+  res.sendFile(path.join(__dirname + '/40A2AF58BE56E3FB1A43F486A515F622.txt'))
 })
 
 
